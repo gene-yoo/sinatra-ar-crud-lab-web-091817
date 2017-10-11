@@ -1,0 +1,11 @@
+<h1>This is the index page</h1>
+
+<a href="/posts/new">New Post</a>
+
+<h2>All Posts:</h2>
+<% @posts.each do |post| %>
+<ul>
+  <li><%= post.name %> </li>
+  <li><%= post.content %> </li>
+</ul>
+<% end %>
